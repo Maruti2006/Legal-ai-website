@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legal Advice AI</title>
+  <style>
+    /* Beautiful background gradient */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navigation menu styling */
+    nav {
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Main content center */
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Button icon style */
+    .chat-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .chat-button:hover {
+      background: #e6b800;
+    }
+
+    /* Chat icon (simple chat bubble) */
+    .chat-button svg {
+      width: 30px;
+      height: 30px;
+      fill: #182848;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="my-rights.html">My Rights</a>
+    <a href="ai-chat-box.html">AI Chat Box</a>
+    <a href="contact.html">Contact</a>
+    <a href="help.html">Help</a>
+  </nav>
+
+  <main>
+    <h1>Welcome to Legal Advice AI</h1>
+  </main>
+
+  <button class="chat-button" onclick="location.href='ai-chat-box.html'" aria-label="Go to AI Chat Box">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M2 3h20v14H6l-4 4V3z"/>
+    </svg>
+  </button>
+
+</body>
+</html>
